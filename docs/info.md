@@ -13,6 +13,9 @@
 # logos
 
 https://iconarchive.com/show/swarm-icons-by-sonya/Mayor-Gym-icon.html
+https://www.flaticon.com/free-icon/android_888839?term=android&page=1&position=2&page=1&position=2&related_id=888839&origin=tag
+https://www.flaticon.com/free-icon/apple_1532495?term=ios&page=1&position=1&page=1&position=1&related_id=1532495&origin=search
+
 
 # api
 
