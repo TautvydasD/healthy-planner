@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response, Router} from 'express'
-import { activityModel, IActivity } from '../models/activity'
+import { activityModel, IActivity } from '../models/activities'
 
 const router: Router = express.Router()
 

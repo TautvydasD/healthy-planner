@@ -12,7 +12,7 @@
             <StackLayout>
                 <Image :src="recipeData.image" class="m-b-15" height="200" stretch="aspectFill"/>
 
-                <Label class="hr m-y-15" row="1"/>
+                <Label :text="recipeData.title" class="hr m-y-15" row="1"/>
             </StackLayout>
         </ScrollView>
     </Page>

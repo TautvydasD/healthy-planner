@@ -56,9 +56,9 @@ export default {
       pages: [
         { name: 'Home', component: this.$routes.Home },
         { name: 'Health', component: this.$routes.Health },
-        { name: 'Meal Plans', component: this.$routes.Meals },
+        // { name: 'Meal Plans', component: this.$routes.Meals },
         { name: 'Recipes', component: this.$routes.Recipes },
-        { name: 'Workouts', compoennt: this.$routes.Workouts },
+        { name: 'Workouts', component: this.$routes.Workouts },
         { name: 'Exercises', component: this.$routes.Exercises },
         { name: 'About', component: this.$routes.About }
       ]

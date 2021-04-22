@@ -1,4 +1,9 @@
 import { Schema, Model, model, Document } from 'mongoose'
+import { IActivity } from './activities'
+import { IExercise } from './exercises'
+import { IMealPlan } from './mealPlans'
+import { IRecipe } from './recipes'
+import { IWorkout } from './workouts'
 
 interface IUser extends Document {
     username: string,
@@ -9,7 +14,12 @@ interface IUser extends Document {
     age: string,
     gender: string,
     phone: string,
-    createdAt: Date
+    createdAt: Date,
+    exercises: Array<IExercise>,
+    recipes: Array<IRecipe>,
+    workouts: Array<IWorkout>,
+    mealPlans: Array<IMealPlan>,
+    activities: Array<IActivity>
 }
 
 const userSchema: Schema = new Schema({
@@ -39,7 +49,37 @@ const userSchema: Schema = new Schema({
     },
     phone: {
         type: String
-    }
+    },
+    exercises: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Exercise'
+        }
+    ],
+    recipes: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Recipe'
+        }
+    ],
+    workouts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Workout'
+        }
+    ],
+    mealPlans: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'MealPlan'
+        }
+    ],
+    activities: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Activity'
+        }
+    ]
 })
 
 const User: Model<IUser> = model('User', userSchema)

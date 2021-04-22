@@ -4,7 +4,9 @@
       <GridLayout width="100%" columns="auto, *">
         <Label text="MENU" @tap="openDrawer()" col="0"/>
         <Label class="title" :text="pageTitle"  col="1"/>
+        <Label v-if="page === 'private'" col="2" text="Edit" verticalAlignment="center"/>
       </GridLayout>
+
     </ActionBar>
     
         <StackLayout ~mainContent>
@@ -14,19 +16,14 @@
             androidSelectedTabHighlightColor="#ffffff"
             androidTabsPosition="bottom"
           >
-            <TabViewItem title="PopoPlan">
-              <StackLayout>
-                <Label text="PoPoPlan recipes"></Label>
-                <!-- <RadCalendar height="1000px" col="0" row="2" /> -->
-              </StackLayout>
+            <TabViewItem title="PopoPlan" @tap="() => page='public'">
+              <Public></Public>
             </TabViewItem>
-            <TabViewItem title="Spooncular">
-              <!-- <Spooncular></Spooncular> -->
+            <TabViewItem title="Spooncular" @tap="() => page='spoon'">
+              <Spooncular></Spooncular>
             </TabViewItem>
-            <TabViewItem title="My Recipes">
-              <StackLayout>
-                <Label text="My created recipes"></Label>
-              </StackLayout>
+            <TabViewItem title="My Recipes" @tap="() => page='private'">
+              <Private></Private>
             </TabViewItem>
         </TabView>
     </StackLayout>
@@ -39,17 +36,21 @@
 
 <script>
 import sideDrawer from '~/mixins/sideDrawer'
-// import Spooncular from './Recipes/Spooncular'
-
+import Public from './Recipes/Public'
+import Spooncular from './Recipes/Spooncular'
+import Private from './Recipes/Private'
 export default {
   mixins: [ sideDrawer ],
-  // components: {
-  //   Spooncular
-  // },
+  components: {
+    Public,
+    Spooncular,
+    Private
+  },
   data () {
     return {
       pageTitle: 'Recipes',
-      text: 'Hello recipes Page!'
+      text: 'Hello recipes Page!',
+      page: 'public'
     }
   }
 }

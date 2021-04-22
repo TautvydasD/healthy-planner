@@ -3,99 +3,115 @@
         <ActionBar>
             <!-- HACK - we should remove the navigation button -->
             <NavigationButton visibility="collapsed"/>
-            <Label horizontalAlignment="center" text="Edit Car Details"/>
+            <Label horizontalAlignment="center" :text="(edit ? 'Edit' : 'Add new') + 'Activity Details'"/>
             <ActionItem @tap="onCancelButtonTap" ios.position="left">
                 <Label text="Cancel" verticalAlignment="center"/>
             </ActionItem>
             <ActionItem ios.position="right">
-                <Label :isEnabled="isModelValid" :isUserInteractionEnabled="isModelValid" @tap="onDoneButtonTap"
-                       text="Done"
-                       verticalAlignment="center"/>
+                <Label
+                  verticalAlignment="center"
+                  text="Done"
+                  @tap="edit ? editActivity() : addActivity()" 
+                />
             </ActionItem>
         </ActionBar>
 
         <GridLayout>
             <ScrollView>
-                <StackLayout class="car-list">
-                    <Label class="car-list-odd" text="CAR MAKE"/>
-                    <TextField :class="{ 'car-list-even': true, 'placeholder-error': !carData.name }" :text="carData.name"
-                               hint="Car make field is required"/>
+                <StackLayout class="activity-list">
+                  <GridLayout
+                    rows="auto, auto, auto"
+                  >
+                    <StackLayout
+                      row="0"
+                    >
+                    <Label class="activity-list-odd" text="Make Activity" />
+                    
+                    <!-- <Label class="activity-list-odd" text="Activity type" /> -->
+                    <TextField
+                      v-model="activityForm.name"
+                      class="input-wrapper"
+                      hint="Name"
+                      autocorret="false"
+                      autocapitalizationType="none"
+                      returnKeyType="next"
+                    />
+                    <!-- <Label class="activity-list-odd" text="Activity reps"/> -->
+                    <TextField
+                      v-model="activityForm.category"
+                      class="input-wrapper"
+                      hint="Category"
+                      autocorret="false"
+                      autocapitalizationType="none"
+                      returnKeyType="next"
+                    />
 
-                    <GridLayout class="car-list-odd" columns="*, auto" rows="*, 55, *">
-                        <Label text="PRICE PER DAY"/>
-                        <Label class="car-list__value" col="1" horizontalAlignment="right">
-                            <FormattedString>
-                                <Span text.decode="&euro;"/>
-                                <Span :text="carData.price"/>
-                            </FormattedString>
-                        </Label>
+                    <TextField
+                      v-model="activityForm.from"
+                      class="Event start"
+                      hint="Image url"
+                      autocorret="false"
+                      autocapitalizationType="none"
+                      returnKeyType="next"
+                    />
+                    <TextField
+                      v-model="activityForm.to"
+                      class="input-wrapper"
+                      hint="Event end"
+                      autocorret="false"
+                      autocapitalizationType="none"
+                      returnKeyType="next"
+                    />
+                    <TextField
+                      v-model="activityForm.description"
+                      class="input-wrapper"
+                      hint="description"
+                      autocorret="false"
+                      autocapitalizationType="none"
+                      returnKeyType="next"
+                    />
+                    </StackLayout>
 
-                        <StackLayout colSpan="2" row="1" verticalAlignment="center">
-                            <Slider class="car-list-even" height="70" v-model="carData.price"
-                                    verticalAlignment="center"/>
-                        </StackLayout>
-
-                        <Label colSpan="2" row="2" text="ADD OR REMOVE IMAGE"/>
-                    </GridLayout>
-
-                    <AddRemoveImage @select="isCarImageDirty = true" v-model="carData.imageUrl"/>
-
-                    <Selector type="class" v-model="carData.class"/>
-
-                    <Selector type="doors" v-model="carData.doors"/>
-
-                    <Selector type="seats" v-model="carData.seats"/>
-
-                    <Selector type="transmission" v-model="carData.transmission"/>
-
-                    <GridLayout class="car-list-odd" orientation="horizontal">
-                        <Label text="LUGGAGE"/>
-                        <Label class="car-list__value" col="1" horizontalAlignment="right">
-                            <FormattedString>
-                                <Span :text="carData.luggage"/>
-                                <Span text=" Bag(s)"/>
-                            </FormattedString>
-                        </Label>
-                    </GridLayout>
-
-                    <Slider class="car-list-even" height="70" maxValue="5" minValue="0" v-model="carData.luggage"
-                            verticalAlignment="center"/>
+                  </GridLayout>
                 </StackLayout>
             </ScrollView>
-
-            <ActivityIndicator :busy="isUpdating"/>
+            <!-- <ActivityIndicator :busy="isUpdating"/> -->
         </GridLayout>
     </Page>
 </template>
 
 <script>
   import { alert } from "@nativescript/core";
-  import CarList from "./CarList";
-  import Selector from "./Selector";
-  import AddRemoveImage from "./AddRemoveImage";
+  import ActivityList from "./Home";
+  // import Selector from "../../components/Selector";
+  // import AddRemoveImage from "./AddRemoveImage";
 
   export default {
-    components: {
-      AddRemoveImage,
-      Selector
+    props: {
+      activity: {
+        default: {}
+      },
+      edit: {
+        type: Boolean,
+        default: false
+      }
     },
-
-    props: ["car"],
 
     data() {
       return {
-        isCarImageDirty: false,
-        isUpdating: false
+        isActivityImageDirty: false,
+        isUpdating: false,
+        activityForm: this.activity ? this.activity : {}
       };
     },
 
     computed: {
       isModelValid() {
-        return !!this.carData.name && !!this.carData.imageUrl;
+        return !!this.activityData.name && !!this.activityData.imageUrl;
       },
 
-      carData() {
-        return this.car || {};
+      activityData() {
+        return this.activity || {};
       }
     },
 
@@ -103,7 +119,37 @@
       onCancelButtonTap() {
         this.$navigateBack();
       },
-
+      addActivity () {
+        const activity = { ...this.activityForm, author: 'tautvis62' }
+        this.$http.post('http://192.168.1.11:5000/api/users/' + '607dd613d79fa252b43393af' + '/activities', {
+          activities: [ activity ]
+        }).then((res) => {
+          this.$navigateTo(ActivityList, {
+            animated: true,
+            clearHistory: true,
+            transition: {
+              name: "slideBottom",
+              duration: 200,
+              curve: "ease"
+            }
+          })
+        })
+      },
+      editActivity () {
+        this.$http.put('http://192.168.1.11:5000/api/users/' + '607dd613d79fa252b43393af' + '/activities/' + this.activity['_id'], {
+          activity: this.activityForm
+        }).then((res) => {
+          this.$navigateTo(ActivityList, {
+            animated: true,
+            clearHistory: true,
+            transition: {
+              name: "slideBottom",
+              duration: 200,
+              curve: "ease"
+            }
+          })
+        })
+      },
       onDoneButtonTap() {
         /* ***********************************************************
         * By design this app is set up to work with read-only sample data.
@@ -115,20 +161,20 @@
         let queue = Promise.resolve();
         this.isUpdating = true;
 
-        if (this.isCarImageDirty && this.carData.imageUrl) {
+        if (this.isActivityImageDirty && this.activityData.imageUrl) {
             queue = queue
-                .then(() => carService.uploadImage(this.carData.imageStoragePath, this.carData.imageUrl))
+                .then(() => activityService.uploadImage(this.activityData.imageStoragePath, this.activityData.imageUrl))
                 .then((uploadedFile) => {
-                    this.carData.imageUrl = uploadedFile.url;
+                    this.activityData.imageUrl = uploadedFile.url;
                 });
         }
 
-        queue.then(() => carService.update(this.carData))
+        queue.then(() => activityService.update(this.activityData))
             .then(() => {
                 this.isUpdating = false;
-                this.isCarImageDirty = false;
+                this.isActivityImageDirty = false;
 
-            this.$navigateTo(CarList, {
+            this.$navigateTo(ActivityList, {
                 animated: true,
                 clearHistory: true,
                 transition: {
@@ -153,7 +199,7 @@
           message: `Check out the "Firebase database setup" section in the readme file to make it editable.`,
           okButtonText: "Ok"
         }).then(() => {
-          this.$navigateTo(CarList, {
+          this.$navigateTo(ActivityList, {
             animated: true,
             clearHistory: true,
             transition: {
@@ -172,7 +218,7 @@
     @import '@nativescript/theme/scss/variables/blue';
 
     // Custom styles
-    .car-list {
+    .activity-list {
 
         &-even,
         &-odd {

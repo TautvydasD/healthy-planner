@@ -1,7 +1,7 @@
 <template>
   <GridLayout
     rows="auto, *"
-    columns="auto, *"
+    columns="auto, auto"
   >
     <RadListView
       ref="listView"
@@ -35,15 +35,16 @@
               row="2"
             />
           </GridLayout>
+          <Button :text="'Add new Activity'" @tap="onAddButtonTap()"></Button>
         </StackLayout>
       </v-template>
     </RadListView>
-    <ActivityIndicator
+    <!-- <ActivityIndicator
       row="1"
       colSpan="2"
       :busy="isLoading"
       v-else
-    />
+    /> -->
     <!-- <Label text="wGer info">
     </Label> -->
   </GridLayout>
@@ -51,6 +52,7 @@
 
 <script>
 import ActivityDetails from './ActivityDetails'
+import ActivityDetailsEdit from './ActivityDetailsEdit'
 
 export default {
   data () {
@@ -70,17 +72,28 @@ export default {
     }
   },
   methods: {
+    onAddButtonTap() {
+      this.$navigateTo(ActivityDetailsEdit, {
+        transition: "slideTop",
+        backstackVisible: false
+        // props: {car: this.carData}
+      })
+    },
     onItemTap(args) {
         this.$emit("select", args.item);
         this.$navigateTo(ActivityDetails, {props: {activity: args.item}})
     },
     getActivities () {
-      this.$http.get('http://192.168.1.11:5000/api/activities').then(res => {
-        console.log(res)
+      this.$http.get('http://192.168.1.11:5000/api/users/607dd613d79fa252b43393af/activities').then(res => {
         this.activities = res.data.activities
-      }).catch(err => {
-        console.log(err)
+        // console.log(res)
       })
+      // this.$http.get('http://192.168.1.11:5000/api/activities').then(res => {
+      //   console.log(res)
+      //   this.activities = res.data.activities
+      // }).catch(err => {
+      //   console.log(err)
+      // })
     }
   }
 }

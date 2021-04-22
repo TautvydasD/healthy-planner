@@ -20,7 +20,7 @@ db.once('open', () => {
 const app: Application = express()
 app.use(favicon(__dirname + '/../public/health-logo.ico'))
 app.use(express.json())
-// app.use(cors())
+app.use(cors())
 app.set('etag', false)
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')

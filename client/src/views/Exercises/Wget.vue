@@ -10,10 +10,51 @@
         {{ amount }}
       </option>
     </select>
-    <div v-for="exercise in exercises" :key="exercise">
+    <div
+      style="width:80%; margin:auto;"
+    >
+      <table
+        style="border-collapse: collapse; width: 100%"
+      >
+        <thead
+          style="width: 100%;"
+        >
+          <tr
+            style="width: 100%; margin: auto;"
+          >
+            <th></th>
+            <th>Exercise Image</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Creation date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(exercise, index) in exercises"
+            :key="exercise"
+            class="exercise-color"
+          >
+            <td>{{ index + 1 }}</td>
+            <td>
+              <img
+                :src="exercise.image"
+                alt="exercise"
+                style="height:60px;background-color:#fff;"
+              >
+            </td>
+            <td>{{ exercise.name }}</td>
+            <td>{{ exercise.license_author }}</td>
+            <td>{{ exercise.creation_date }}</td>
+            <!-- <td>{{ exercise }}</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <div v-for="exercise in exercises" :key="exercise">
       {{ exercise.name }}
       <img style="width:100px;100px;" :src="exercise.image" alt="exercise">
-    </div>
+    </div> -->
     <!-- {{ exercises }} -->
   </div>
 </template>
@@ -50,3 +91,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './Exercises.scss';
+</style>

@@ -1,0 +1,52 @@
+[HMR] Waiting for update signal from WDS... log.js:24
+Public.vue:97
+{…}
+​
+config: Object { url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=0d9526c1c8ba461bb3d29c2b20ace171", method: "get", timeout: 0, … }
+​
+data: {…}
+​​
+number: 10
+​​
+offset: 0
+​​
+results: (10) […]
+​​​
+0: Object { id: 716426, title: "Cauliflower, Brown Rice, and Vegetable Fried Rice", image: "https://spoonacular.com/recipeImages/716426-312x231.jpg", … }
+​​​
+1: Object { id: 715594, title: "Homemade Garlic and Basil French Fries", image: "https://spoonacular.com/recipeImages/715594-312x231.jpg", … }
+​​​
+2: Object { id: 715497, title: "Berry Banana Breakfast Smoothie", image: "https://spoonacular.com/recipeImages/715497-312x231.jpg", … }
+​​​
+3: Object { id: 644387, title: "Garlicky Kale", image: "https://spoonacular.com/recipeImages/644387-312x231.jpg", … }
+​​​
+4: Object { id: 715392, title: "Chicken Tortilla Soup (Slow Cooker)", image: "https://spoonacular.com/recipeImages/715392-312x231.jpg", … }
+​​​
+5: Object { id: 716268, title: "African Chicken Peanut Stew", image: "https://spoonacular.com/recipeImages/716268-312x231.jpg", … }
+​​​
+6: Object { id: 716381, title: "Nigerian Snail Stew", image: "https://spoonacular.com/recipeImages/716381-312x231.jpg", … }
+​​​
+7: Object { id: 782601, title: "Red Kidney Bean Jambalaya", image: "https://spoonacular.com/recipeImages/782601-312x231.jpg", … }
+​​​
+8: Object { id: 794349, title: "Broccoli and Chickpea Rice Salad", image: "https://spoonacular.com/recipeImages/794349-312x231.jpg", … }
+​​​
+9: Object { id: 715446, title: "Slow Cooker Beef Stew", image: "https://spoonacular.com/recipeImages/715446-312x231.jpg", … }
+​​​
+length: 10
+​​​
+<prototype>: Array []
+​​
+totalResults: 5076
+​​
+<prototype>: Object { … }
+​
+headers: Object { "content-type": "application/json" }
+​
+request: XMLHttpRequest { readyState: 4, timeout: 0, withCredentials: false, … }
+​
+status: 200
+​
+statusText: "OK"
+​
+<prototype>: Object { … }
+Spooncular.vue:30

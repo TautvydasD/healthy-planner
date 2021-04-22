@@ -39,6 +39,16 @@ router.route('/')
     res.send({ message: 'Method not allowed, Missing item id' })
   })
 
+  router.get('/public', async (req: Request, res: Response) => {
+    try {
+      res.statusCode = 200
+      res.setHeader('Cache-Control', 'max-age=3600')
+      const recipes: Array<IRecipe>  = await recipeModel.find()
+      res.send({ recipes: recipes.filter(el => !el.isPrivate) })
+    } catch {
+      res.send({ error: 'Could not get exercises' })
+    }
+  })
 
 
 

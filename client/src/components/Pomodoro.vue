@@ -16,7 +16,9 @@
     <div class="timer-button-container">
       <button
         class="timer-button"
+        :class="{ dsblButton: isActive }"
         @click="startCountDown"
+        :disabled="isActive"
       >
         Start
       </button>
@@ -70,7 +72,8 @@ export default {
       },
       minutesLeft: 25,
       secondsLeft: 0,
-      workCounter: 0
+      workCounter: 0,
+      isActive: false
     }
   },
   methods: {
@@ -79,6 +82,7 @@ export default {
     // },
     startCountDown () {
       console.log(typeof this.prepareWorkCountDown)
+      this.isActive = true
       if (this.timer.status === 'work') {
         this.startWorkCountDown()
       } else if (this.timer.status === 'short') {
@@ -100,6 +104,7 @@ export default {
      
     },
     startWorkAlarm () {
+      this.isActive=false
       alert(`${this.workCounter + 1} out of ${this.timer.interval} work sprints are finished`)
       this.workCounter += 1
       if (this.workCounter === this.timer.interval) {
@@ -172,5 +177,10 @@ export default {
     background: grey;
     border-style: solid;
     border-color: #000;
+  }
+
+  .dsblButton {
+    cursor:default;
+    background: grey;
   }
 </style>

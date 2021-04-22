@@ -35,6 +35,10 @@
                     <Label class="p-l-15 p-b-10 m-r-20" row="4" text="Created At"/>
                     <Label :text="activityData.createdAt" class="p-b-10" col="1" row="4"/>
 
+                    <Label class="p-l-15 p-b-10 m-r-20" row="5" text="Activity Id"/>
+                    <Label :text="activityData['_id']" class="p-b-10" col="1" row="5"/>
+
+                    <Button :text="'Remove activity'" :row="6" @tap="deleteActivity()"></Button>
                 </GridLayout>
             </StackLayout>
         </ScrollView>
@@ -42,12 +46,36 @@
 </template>
 
 <script>
+  import ActivityDetailsEdit from './ActivityDetailsEdit'
+  import Home from './Home'
   export default {
     props: ["activity"],
 
     computed: {
       activityData() {
         return this.activity || {}
+      }
+    },
+    methods: {
+      onEditButtonTap() {
+        this.$navigateTo(ActivityDetailsEdit, {
+          transition: "slideTop",
+          backstackVisible: false,
+          props: {activity: this.activityData, edit:true}
+        });
+      },
+      deleteActivity () {
+            this.$http.delete('http://192.168.1.11:5000/api/users/' + '607dd613d79fa252b43393af' + '/activities/' + this.activity['_id']).then(() => {
+                this.$navigateTo(Home, {
+                    animated: true,
+                    clearHistory: true,
+                    transition: {
+                      name: "slideBottom",
+                      duration: 200,
+                      curve: "ease"
+                    }
+                });
+            })     
       }
     }
   }
