@@ -1,3 +1,8 @@
+/**
+* Author: Tautvydas Dikšas
+* Date: 2021-04-26
+* Path: app/routes/index
+*/
 import Login from '../components/Login.vue'
 import App from '../components/App.vue'
 
@@ -10,6 +15,7 @@ import Profile from '../views/User/Profile.vue'
 import Recipes from '../views/Food/Recipes.vue'
 import Meals from '../views/Food/Meals.vue'
 import Health from '../views/Health/Health.vue'
+import SideDrawer from '../components/sideDrawer.vue'
 
 const routes = {
     login: Login,
@@ -22,7 +28,8 @@ const routes = {
     // Planner: Planner,
     Recipes: Recipes,
     Meals: Meals,
-    Health: Health
+    Health: Health,
+    SideDrawer: SideDrawer
 }
 
 export default routes

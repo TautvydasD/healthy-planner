@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/routes
+ * 
+ */
 import { api } from './routes/api'
 import { plans } from './routes/plans'
 import { users } from './routes/users'

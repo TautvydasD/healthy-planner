@@ -1,3 +1,8 @@
+/**
+* Author: Tautvydas Dikšas
+* Date: 2021-04-26
+* Path: app/store/sideDrawer
+*/
 const state = {
   sideDrawer: false
 }

@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/models/users
+ * 
+ */
 import { Schema, Model, model, Document } from 'mongoose'
 import { IActivity } from './activities'
 import { IExercise } from './exercises'

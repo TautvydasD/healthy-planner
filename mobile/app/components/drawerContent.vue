@@ -1,4 +1,11 @@
 <template>
+  <!-- 
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: app/components/drawerContent
+    */
+  -->
   <GridLayout
     rows="auto, *"
     class="nt-drawer__content"

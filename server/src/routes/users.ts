@@ -630,7 +630,44 @@ router.route('/:id')
     res.send({ message: 'Method not allowed, Missing item id' })
   })
 
-  router.route('/:id/activities/:activity')
+
+/**
+ * route: /api/users/:id/activities/:activity
+ * 
+ * GET 
+ * @summary Get user activity by id
+ * @tags Activities
+ * @param {string} id = user ID
+ * @param {string} activity - activity ID
+ * @return {object} 200 - User activity found
+ * @return {Object} 404 - User activity not found
+ * 
+ * POST
+ * @summary HTTP Post handling
+ * @tags Activities
+ * @param {string} id = user ID
+ * @param {string} activity - activity ID
+ * @return {Object} 400 - Bad Request
+ * 
+ * PUT
+ * @summary Edit user activity
+ * @tags Activities
+ * @param {string} id = user ID
+ * @param {string} activity - activity ID
+ * @return {Object} 200 - 
+ * @return {Object} 400 - Bad Request
+ * @return {Object} 404 - Activity not found
+ * @return {Object} 404 - User not found
+ * 
+ * DELETE
+ * @summary Get user activity by id
+ * @tags Activities
+ * @param {string} id = user ID
+ * @param {string} activity - activity ID
+ * @return {object} 200 - User activity found
+ * @return {Object} 404 - User activity not found
+ */
+router.route('/:id/activities/:activity')
   .all((req, res, next) => {
     res.setHeader('Content-Type', 'application/json')
     next()
@@ -638,14 +675,17 @@ router.route('/:id')
   .get(async (req : Request, res : Response) => {
     const userObj: IUser | null = await userModel.findById(req.params.id).populate('activities')
     const obj = userObj?.activities.find(el => el['_id'] == req.params.activity)
+    
     if (!obj) {
-      res.statusCode = 404
-      res.send({ message: 'Item not found' })
-      return
+      return res
+        .status(404)
+        .send({ message: 'Item not found' })
     }
-    res.statusCode = 200
+
     res.setHeader('Cache-Control', 'max-age=3600')
-    res.send(obj)
+    return res
+      .status(200)
+      .send(obj)
   })
   .post((req : Request, res : Response) => {
     res.statusCode = 400
@@ -654,9 +694,9 @@ router.route('/:id')
   .put(async (req: Request, res: Response) => {
     const userObj = await userModel.findById(req.params.id).populate('activities').exec()
     if (!userObj) {
-      res.statusCode = 404
-      res.send({ message: 'Activity not found' })
-      return
+      return res
+        .status(404)
+        .send({ message: 'Activity not found' })
     }
 
     let exists = false
@@ -691,39 +731,101 @@ router.route('/:id')
     })
   })
   .delete(async (req: Request, res: Response) => {
-    const user = await userModel.findById(req.params.id).populate('activities').exec()
+    const user = await userModel
+      .findById(req.params.id)
+      .populate('activities')
+      .exec()
+
     if (!user) {
-      console.log('fails here')
-      res.statusCode = 404
-      res.send({ message: 'Activity not found' })
-      return
+      return res
+        .status(404)
+        .send({ message: 'Activity not found' })
     }
+
     const ids: number = user?.activities.map(el => el['_id']).indexOf(req.params.activity) ?? 0
+    
     user?.activities.splice(ids, 1)
+    
     user?.save((err) => {
       if (err) {
-        res.statusCode = 400
-        res.send(err)
-        return
+        return res
+          .status(400)
+          .send(err)
       }
-      activityModel.findByIdAndRemove(req.params.activity).then((results: IActivity | null) => {
-        if (!results) {
-          res.statusCode = 404
-          res.send({ message: 'Activity not found' })
-          return
-        }
-  
-        res.statusCode = 200
-        res.send('')
-      })
-      .catch((err: Error) => {
-        if (err) {
-          res.statusCode = 400
-          res.send({ error: 'Cannot remove Activity' })
-          return
-        }
-      })
+
+      activityModel
+        .findByIdAndRemove(req.params.activity)
+        .then((results: IActivity | null) => {
+          if (!results) {
+            return res
+              .status(404)
+              .send({ message: 'Activity not found' })
+          }
+    
+          res.statusCode = 200
+          res.send('')
+        })
+        .catch((err: Error) => {
+          if (err) {
+            return res
+              .status(400)
+              .send({ error: 'Cannot remove Activity' })
+          }
+        })
     })
   })
 
+router
+  .route('/:id/activities/dates/:date')
+  .all((req, res, next) => {
+    res.setHeader('Content-Type', 'application/json')
+    next()
+  })
+  .get(async (req : Request, res : Response) => {
+    const userObj: IUser | null = await userModel
+      .findById(req.params.id)
+      .populate('activities')
+    const obj = userObj
+      ?.activities.find(el => el.fromDate.toString() == req.params.fromDate)
+    
+    if (!obj) {
+      return res.status(404).send({ message: 'Item not found' })
+    }
+
+    res.setHeader('Cache-Control', 'max-age=3600')
+    res.status(200).send(obj)
+  })
+  .post(async (req: Request, res: Response) => {
+    const userObj: IUser | null = await userModel
+      .findById(req.params.id)
+      .populate('activities')
+
+    
+  })
+  .post(async (req: Request, res: Response) => {
+    const ids = req.body.activities.filter((el: IActivity) => typeof el === 'string')
+    console.log(ids)
+    const activities = req.body.activities.filter((el: IActivity) => typeof el != 'string')
+    console.log(activities)
+    const activitiesIds = [
+      (await activityModel.create(activities[0]).then((doc: IActivity) => {
+        return doc
+      }))['_id'].toString()
+    ]
+    activitiesIds.push(...ids)
+
+    const userObj = await userModel.findByIdAndUpdate(
+      req.params.id,
+      {
+        $push: {
+          activities: {
+            $each: activitiesIds
+          }
+        }
+      },
+      { new: true, useFindAndModify: false }
+    ).populate('activities')
+    res.statusCode = 200
+    res.send({ ['activities']: userObj?.activities })
+  })
 export { router as users }

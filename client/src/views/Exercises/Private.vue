@@ -1,4 +1,11 @@
 <template>
+  <!-- 
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/views/Exercises/Private
+    */
+  -->
   <div>
     <h1>Your own exercises</h1>
     <h3>Your exercises</h3>

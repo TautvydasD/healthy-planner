@@ -1,4 +1,11 @@
 <template>
+  <!--
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/components/SignUp
+    */
+  -->
   <div>
     <button
       class="user-button"

@@ -1,10 +1,10 @@
 # Details
 
-Date : 2021-04-20 04:48:22
+Date : 2021-04-22 15:38:43
 
 Directory d:\Studies\Semester8\Bakalauras\health-system
 
-Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
+Total : 160 files,  39033 codes, 730 comments, 752 blanks, all 40515 lines
 
 [summary](results.md)
 
@@ -23,7 +23,7 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [client/src/components/Logout.vue](/client/src/components/Logout.vue) | Vue | 24 | 0 | 2 | 26 |
 | [client/src/components/Modal.vue](/client/src/components/Modal.vue) | Vue | 37 | 0 | 2 | 39 |
 | [client/src/components/Navigation.vue](/client/src/components/Navigation.vue) | Vue | 107 | 0 | 4 | 111 |
-| [client/src/components/Pomodoro.vue](/client/src/components/Pomodoro.vue) | Vue | 160 | 8 | 9 | 177 |
+| [client/src/components/Pomodoro.vue](/client/src/components/Pomodoro.vue) | Vue | 169 | 8 | 10 | 187 |
 | [client/src/components/SignUp.vue](/client/src/components/SignUp.vue) | Vue | 110 | 0 | 5 | 115 |
 | [client/src/components/scss/App.scss](/client/src/components/scss/App.scss) | SCSS | 19 | 3 | 1 | 23 |
 | [client/src/components/scss/Calendar.scss](/client/src/components/scss/Calendar.scss) | SCSS | 67 | 1 | 15 | 83 |
@@ -40,18 +40,18 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [client/src/store/index.js](/client/src/store/index.js) | JavaScript | 63 | 0 | 2 | 65 |
 | [client/src/views/About.vue](/client/src/views/About.vue) | Vue | 35 | 2 | 3 | 40 |
 | [client/src/views/Exercises/Exercises.scss](/client/src/views/Exercises/Exercises.scss) | SCSS | 9 | 1 | 3 | 13 |
-| [client/src/views/Exercises/Private.vue](/client/src/views/Exercises/Private.vue) | Vue | 136 | 2 | 3 | 141 |
+| [client/src/views/Exercises/Private.vue](/client/src/views/Exercises/Private.vue) | Vue | 189 | 2 | 4 | 195 |
 | [client/src/views/Exercises/Public.vue](/client/src/views/Exercises/Public.vue) | Vue | 102 | 5 | 3 | 110 |
 | [client/src/views/Exercises/Wget.vue](/client/src/views/Exercises/Wget.vue) | Vue | 95 | 0 | 2 | 97 |
-| [client/src/views/Exercises/Workouts.vue](/client/src/views/Exercises/Workouts.vue) | Vue | 5 | 0 | 0 | 5 |
+| [client/src/views/Exercises/Workouts.vue](/client/src/views/Exercises/Workouts.vue) | Vue | 158 | 1 | 5 | 164 |
 | [client/src/views/Health/Focus.vue](/client/src/views/Health/Focus.vue) | Vue | 16 | 0 | 2 | 18 |
 | [client/src/views/Health/Progress.vue](/client/src/views/Health/Progress.vue) | Vue | 7 | 0 | 0 | 7 |
 | [client/src/views/Health/Sleep.vue](/client/src/views/Health/Sleep.vue) | Vue | 208 | 89 | 14 | 311 |
 | [client/src/views/Health/Status.vue](/client/src/views/Health/Status.vue) | Vue | 7 | 0 | 1 | 8 |
 | [client/src/views/Health/Test.vue](/client/src/views/Health/Test.vue) | Vue | 56 | 8 | 4 | 68 |
 | [client/src/views/Home.vue](/client/src/views/Home.vue) | Vue | 42 | 2 | 4 | 48 |
-| [client/src/views/Planner.vue](/client/src/views/Planner.vue) | Vue | 227 | 1 | 9 | 237 |
-| [client/src/views/Recipes/Private.vue](/client/src/views/Recipes/Private.vue) | Vue | 83 | 0 | 3 | 86 |
+| [client/src/views/Planner.vue](/client/src/views/Planner.vue) | Vue | 330 | 3 | 6 | 339 |
+| [client/src/views/Recipes/Private.vue](/client/src/views/Recipes/Private.vue) | Vue | 201 | 1 | 4 | 206 |
 | [client/src/views/Recipes/Public.vue](/client/src/views/Recipes/Public.vue) | Vue | 76 | 1 | 3 | 80 |
 | [client/src/views/Recipes/Recipes.scss](/client/src/views/Recipes/Recipes.scss) | SCSS | 9 | 1 | 3 | 13 |
 | [client/src/views/Recipes/Spooncular.vue](/client/src/views/Recipes/Spooncular.vue) | Vue | 82 | 0 | 4 | 86 |
@@ -59,7 +59,7 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [client/src/views/User/Settings.vue](/client/src/views/User/Settings.vue) | Vue | 0 | 0 | 1 | 1 |
 | [client/src/views/scss/About.scss](/client/src/views/scss/About.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/views/scss/Home.scss](/client/src/views/scss/Home.scss) | SCSS | 0 | 0 | 1 | 1 |
-| [client/src/views/scss/Planner.scss](/client/src/views/scss/Planner.scss) | SCSS | 0 | 0 | 1 | 1 |
+| [client/src/views/scss/Planner.scss](/client/src/views/scss/Planner.scss) | SCSS | 9 | 1 | 3 | 13 |
 | [client/tests/unit/example.spec.js](/client/tests/unit/example.spec.js) | JavaScript | 12 | 0 | 2 | 14 |
 | [docs/info.md](/docs/info.md) | Markdown | 14 | 0 | 9 | 23 |
 | [mobile/App_Resources/Android/app.gradle](/mobile/App_Resources/Android/app.gradle) | Groovy | 9 | 8 | 4 | 21 |
@@ -82,7 +82,9 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [mobile/app/components/App.scss](/mobile/app/components/App.scss) | SCSS | 0 | 7 | 4 | 11 |
 | [mobile/app/components/App.vue](/mobile/app/components/App.vue) | Vue | 163 | 23 | 12 | 198 |
 | [mobile/app/components/Login.vue](/mobile/app/components/Login.vue) | Vue | 301 | 5 | 7 | 313 |
-| [mobile/app/components/drawerContent.vue](/mobile/app/components/drawerContent.vue) | Vue | 78 | 0 | 3 | 81 |
+| [mobile/app/components/Selector.vue](/mobile/app/components/Selector.vue) | Vue | 46 | 0 | 10 | 56 |
+| [mobile/app/components/SelectorModal.vue](/mobile/app/components/SelectorModal.vue) | Vue | 108 | 1 | 19 | 128 |
+| [mobile/app/components/drawerContent.vue](/mobile/app/components/drawerContent.vue) | Vue | 77 | 1 | 3 | 81 |
 | [mobile/app/components/sideDrawer.vue](/mobile/app/components/sideDrawer.vue) | Vue | 16 | 0 | 2 | 18 |
 | [mobile/app/mixins/sideDrawer.ts](/mobile/app/mixins/sideDrawer.ts) | TypeScript | 37 | 0 | 0 | 37 |
 | [mobile/app/routes/index.ts](/mobile/app/routes/index.ts) | TypeScript | 23 | 2 | 3 | 28 |
@@ -92,18 +94,29 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [mobile/app/style/app.scss](/mobile/app/style/app.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [mobile/app/views/About.vue](/mobile/app/views/About.vue) | Vue | 26 | 0 | 3 | 29 |
 | [mobile/app/views/Activities/Exercises.vue](/mobile/app/views/Activities/Exercises.vue) | Vue | 101 | 0 | 3 | 104 |
-| [mobile/app/views/Activities/Exercises/Private.vue](/mobile/app/views/Activities/Exercises/Private.vue) | Vue | 6 | 0 | 0 | 6 |
-| [mobile/app/views/Activities/Exercises/Public.vue](/mobile/app/views/Activities/Exercises/Public.vue) | Vue | 6 | 0 | 0 | 6 |
+| [mobile/app/views/Activities/Exercises/Private.vue](/mobile/app/views/Activities/Exercises/Private.vue) | Vue | 110 | 3 | 6 | 119 |
+| [mobile/app/views/Activities/Exercises/PrivateAddEdit.vue](/mobile/app/views/Activities/Exercises/PrivateAddEdit.vue) | Vue | 227 | 44 | 25 | 296 |
+| [mobile/app/views/Activities/Exercises/PrivateDetails.vue](/mobile/app/views/Activities/Exercises/PrivateDetails.vue) | Vue | 74 | 0 | 11 | 85 |
+| [mobile/app/views/Activities/Exercises/Public.vue](/mobile/app/views/Activities/Exercises/Public.vue) | Vue | 100 | 1 | 5 | 106 |
+| [mobile/app/views/Activities/Exercises/PublicDetails.vue](/mobile/app/views/Activities/Exercises/PublicDetails.vue) | Vue | 47 | 0 | 10 | 57 |
 | [mobile/app/views/Activities/Exercises/Wger.vue](/mobile/app/views/Activities/Exercises/Wger.vue) | Vue | 111 | 1 | 6 | 118 |
 | [mobile/app/views/Activities/Exercises/WgerDetails.vue](/mobile/app/views/Activities/Exercises/WgerDetails.vue) | Vue | 47 | 0 | 10 | 57 |
-| [mobile/app/views/Activities/Workouts.vue](/mobile/app/views/Activities/Workouts.vue) | Vue | 26 | 0 | 3 | 29 |
+| [mobile/app/views/Activities/WorkoutAddEdit.vue](/mobile/app/views/Activities/WorkoutAddEdit.vue) | Vue | 187 | 44 | 24 | 255 |
+| [mobile/app/views/Activities/WorkoutDetails.vue](/mobile/app/views/Activities/WorkoutDetails.vue) | Vue | 76 | 0 | 13 | 89 |
+| [mobile/app/views/Activities/Workouts.vue](/mobile/app/views/Activities/Workouts.vue) | Vue | 126 | 3 | 7 | 136 |
 | [mobile/app/views/Activities/Workouts/Private.vue](/mobile/app/views/Activities/Workouts/Private.vue) | Vue | 0 | 0 | 1 | 1 |
 | [mobile/app/views/Activities/Workouts/Public.vue](/mobile/app/views/Activities/Workouts/Public.vue) | Vue | 0 | 0 | 1 | 1 |
-| [mobile/app/views/Activity.vue](/mobile/app/views/Activity.vue) | Vue | 105 | 1 | 6 | 112 |
-| [mobile/app/views/ActivityDetails.vue](/mobile/app/views/ActivityDetails.vue) | Vue | 45 | 0 | 9 | 54 |
-| [mobile/app/views/ActivityDetailsEdit.vue](/mobile/app/views/ActivityDetailsEdit.vue) | Vue | 157 | 42 | 34 | 233 |
+| [mobile/app/views/Activity.vue](/mobile/app/views/Activity.vue) | Vue | 110 | 9 | 6 | 125 |
+| [mobile/app/views/ActivityDetails.vue](/mobile/app/views/ActivityDetails.vue) | Vue | 72 | 0 | 10 | 82 |
+| [mobile/app/views/ActivityDetailsEdit.vue](/mobile/app/views/ActivityDetailsEdit.vue) | Vue | 211 | 44 | 24 | 279 |
 | [mobile/app/views/Food/Meals.vue](/mobile/app/views/Food/Meals.vue) | Vue | 26 | 0 | 3 | 29 |
-| [mobile/app/views/Food/Recipes.vue](/mobile/app/views/Food/Recipes.vue) | Vue | 49 | 4 | 3 | 56 |
+| [mobile/app/views/Food/Recipes.vue](/mobile/app/views/Food/Recipes.vue) | Vue | 54 | 0 | 3 | 57 |
+| [mobile/app/views/Food/Recipes/Private.vue](/mobile/app/views/Food/Recipes/Private.vue) | Vue | 110 | 3 | 6 | 119 |
+| [mobile/app/views/Food/Recipes/PrivateAddEdit.vue](/mobile/app/views/Food/Recipes/PrivateAddEdit.vue) | Vue | 219 | 44 | 25 | 288 |
+| [mobile/app/views/Food/Recipes/PrivateDetails.vue](/mobile/app/views/Food/Recipes/PrivateDetails.vue) | Vue | 74 | 0 | 11 | 85 |
+| [mobile/app/views/Food/Recipes/Public.vue](/mobile/app/views/Food/Recipes/Public.vue) | Vue | 100 | 1 | 5 | 106 |
+| [mobile/app/views/Food/Recipes/PublicDetails.vue](/mobile/app/views/Food/Recipes/PublicDetails.vue) | Vue | 49 | 0 | 11 | 60 |
+| [mobile/app/views/Food/Recipes/Spooncular.vue](/mobile/app/views/Food/Recipes/Spooncular.vue) | Vue | 101 | 1 | 5 | 107 |
 | [mobile/app/views/Food/Recipes/SpooncularDetails.vue](/mobile/app/views/Food/Recipes/SpooncularDetails.vue) | Vue | 27 | 0 | 4 | 31 |
 | [mobile/app/views/Health/Focus.vue](/mobile/app/views/Health/Focus.vue) | Vue | 87 | 5 | 6 | 98 |
 | [mobile/app/views/Health/Health.vue](/mobile/app/views/Health/Health.vue) | Vue | 48 | 0 | 3 | 51 |
@@ -113,7 +126,7 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [mobile/hooks/before-checkForChanges/nativescript-core.js](/mobile/hooks/before-checkForChanges/nativescript-core.js) | JavaScript | 1 | 0 | 1 | 2 |
 | [mobile/hooks/before-checkForChanges/nativescript-webpack.js](/mobile/hooks/before-checkForChanges/nativescript-webpack.js) | JavaScript | 1 | 0 | 1 | 2 |
 | [mobile/nativescript.config.ts](/mobile/nativescript.config.ts) | TypeScript | 10 | 0 | 2 | 12 |
-| [mobile/package-lock.json](/mobile/package-lock.json) | JSON | 8,412 | 0 | 1 | 8,413 |
+| [mobile/package-lock.json](/mobile/package-lock.json) | JSON | 8,397 | 0 | 1 | 8,398 |
 | [mobile/package.json](/mobile/package.json) | JSON | 60 | 0 | 1 | 61 |
 | [mobile/tools/assets/thumbnail.svg](/mobile/tools/assets/thumbnail.svg) | XML | 1 | 0 | 0 | 1 |
 | [mobile/tools/dot.gitignore](/mobile/tools/dot.gitignore) | Ignore | 25 | 5 | 5 | 35 |
@@ -127,16 +140,16 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [server/config.json](/server/config.json) | JSON | 6 | 0 | 0 | 6 |
 | [server/package-lock.json](/server/package-lock.json) | JSON | 3,185 | 0 | 1 | 3,186 |
 | [server/package.json](/server/package.json) | JSON | 41 | 0 | 1 | 42 |
-| [server/src/app.ts](/server/src/app.ts) | TypeScript | 41 | 7 | 8 | 56 |
+| [server/src/app.ts](/server/src/app.ts) | TypeScript | 42 | 6 | 8 | 56 |
 | [server/src/constants/endpoint.ts](/server/src/constants/endpoint.ts) | TypeScript | 1 | 0 | 0 | 1 |
 | [server/src/helpers/auth.ts](/server/src/helpers/auth.ts) | TypeScript | 0 | 0 | 1 | 1 |
-| [server/src/models/activity.ts](/server/src/models/activity.ts) | TypeScript | 36 | 10 | 4 | 50 |
+| [server/src/models/activities.ts](/server/src/models/activities.ts) | TypeScript | 36 | 10 | 4 | 50 |
 | [server/src/models/exercises.ts](/server/src/models/exercises.ts) | TypeScript | 57 | 0 | 4 | 61 |
 | [server/src/models/mealPlans.ts](/server/src/models/mealPlans.ts) | TypeScript | 43 | 0 | 4 | 47 |
 | [server/src/models/meals.ts](/server/src/models/meals.ts) | TypeScript | 27 | 0 | 4 | 31 |
 | [server/src/models/recipes.ts](/server/src/models/recipes.ts) | TypeScript | 51 | 0 | 4 | 55 |
 | [server/src/models/sleeps.ts](/server/src/models/sleeps.ts) | TypeScript | 27 | 0 | 4 | 31 |
-| [server/src/models/users.ts](/server/src/models/users.ts) | TypeScript | 75 | 0 | 4 | 79 |
+| [server/src/models/users.ts](/server/src/models/users.ts) | TypeScript | 83 | 0 | 4 | 87 |
 | [server/src/models/workouts.ts](/server/src/models/workouts.ts) | TypeScript | 19 | 0 | 4 | 23 |
 | [server/src/routes.ts](/server/src/routes.ts) | TypeScript | 14 | 0 | 1 | 15 |
 | [server/src/routes/activities.ts](/server/src/routes/activities.ts) | TypeScript | 122 | 6 | 7 | 135 |
@@ -144,8 +157,8 @@ Total : 147 files,  36299 codes, 562 comments, 537 blanks, all 37398 lines
 | [server/src/routes/exercises.ts](/server/src/routes/exercises.ts) | TypeScript | 122 | 11 | 8 | 141 |
 | [server/src/routes/mailApi.ts](/server/src/routes/mailApi.ts) | TypeScript | 0 | 0 | 1 | 1 |
 | [server/src/routes/recipes.ts](/server/src/routes/recipes.ts) | TypeScript | 49 | 0 | 7 | 56 |
-| [server/src/routes/sleeps.ts](/server/src/routes/sleeps.ts) | TypeScript | 0 | 0 | 1 | 1 |
-| [server/src/routes/users.ts](/server/src/routes/users.ts) | TypeScript | 302 | 3 | 14 | 319 |
+| [server/src/routes/sleeps.ts](/server/src/routes/sleeps.ts) | TypeScript | 102 | 11 | 6 | 119 |
+| [server/src/routes/users.ts](/server/src/routes/users.ts) | TypeScript | 689 | 4 | 36 | 729 |
 | [server/src/routes/workouts.ts](/server/src/routes/workouts.ts) | TypeScript | 10 | 0 | 3 | 13 |
 | [server/src/template/mailApi.html](/server/src/template/mailApi.html) | HTML | 155 | 2 | 2 | 159 |
 | [server/tsconfig.json](/server/tsconfig.json) | JSON | 14 | 50 | 8 | 72 |

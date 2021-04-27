@@ -1,3 +1,10 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/routes/activities
+ * 
+ */
+
 import express, { NextFunction, Request, Response, Router} from 'express'
 import { activityModel, IActivity } from '../models/activities'
 

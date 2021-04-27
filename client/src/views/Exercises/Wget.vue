@@ -1,4 +1,11 @@
 <template>
+  <!-- 
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/views/Exercises/Wget
+    */
+  -->
   <div>
     <h1>
       Exercises

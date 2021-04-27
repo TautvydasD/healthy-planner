@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/models/sleeps
+ * 
+ */
 import { Schema, Model, model, Document } from 'mongoose'
 
 interface ISleep extends Document {

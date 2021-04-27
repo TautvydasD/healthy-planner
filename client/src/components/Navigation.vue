@@ -1,4 +1,11 @@
 <template>
+  <!--
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/components/Navigation
+    */
+  -->
   <nav>
     <div><img src="health-logo.ico" alt="PopoPlan" /></div>
     <div
@@ -53,7 +60,7 @@ export default {
         { route: '/health', name: 'Health', hasChild: true },
         { route: '/recipes', name: 'Recipes', hasChild: true },
         { route: '/exercises', name: 'Exercises', hasChild: true },
-        { route: '/workouts', name: 'Workouts' },
+        { route: '/workouts', name: 'Workouts', isUserSpecific: true },
         { route: '/about', name: 'About' },
         { route: '/profile', name: 'Profile', hasChild: true, isUserSpecific: true },
       ],

@@ -1,4 +1,11 @@
 <template>
+  <!-- 
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: app/components/Login
+    */
+  -->
   <Page
     actionBarHidden="true"
   >
@@ -138,12 +145,12 @@ export default {
     }
   },
   mounted () {
-    this.$store.commit('loadFromStorage')
-    if (this.$store.state.token) {
-      this.$navigateTo(App, {
-        clearHistory: true
-      })
-    }
+    // this.$store.commit('loadFromStorage')
+    // if (this.$store.state.token) {
+    //   this.$navigateTo(App, {
+    //     clearHistory: true
+    //   })
+    // }
   },
   methods: {
     toggleSignUp () {
@@ -162,6 +169,8 @@ export default {
           console.log(this.$store.state.token)
           this.$navigateTo(this.$routes.Home, {
             clearHistory: true
+          }).then(() => {
+            this.$forceUpdate()
           })
         })
       }).catch(err => {
@@ -172,7 +181,7 @@ export default {
         this.alert(err.response.data.error)
         
       }).catch(err => {
-        console.log('logjn failed')
+        console.log('login failed')
         this.alert(err)
       })
 
@@ -186,7 +195,7 @@ export default {
         this.isProcessing = false
           this.$store.dispatch('setUser', 'heyo').then(() => {
             console.log(this.$store.state.token)
-            this.$navigateTo(App, {
+            this.$navigateTo(this.$routes.SideDrawer, {
               clearHistory: true
             })
           })

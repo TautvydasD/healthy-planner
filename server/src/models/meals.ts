@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/models/meals
+ * 
+ */
 import { Schema, Model, model, Document } from 'mongoose'
 
 interface IMeal extends Document {

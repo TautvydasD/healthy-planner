@@ -1,4 +1,11 @@
 <template>
+    <!-- 
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/views/Home
+    */
+  -->
   <div style="width:90%;margin:auto;">
     <h1>
       Welcome to PopoPlan!

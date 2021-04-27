@@ -1,3 +1,8 @@
+/**
+* Author: Tautvydas Dikšas
+* Date: 2021-04-26
+* Path: src/main
+*/
 import { createApp } from 'vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'

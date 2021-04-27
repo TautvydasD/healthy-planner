@@ -1,10 +1,10 @@
 # Details
 
-Date : 2021-04-20 10:00:48
+Date : 2021-04-25 18:07:56
 
 Directory d:\Studies\Semester8\Bakalauras\health-system
 
-Total : 147 files,  36644 codes, 578 comments, 549 blanks, all 37771 lines
+Total : 166 files,  42077 codes, 851 comments, 782 blanks, all 43710 lines
 
 [summary](results.md)
 
@@ -19,11 +19,11 @@ Total : 147 files,  36644 codes, 578 comments, 549 blanks, all 37771 lines
 | [client/public/index.html](/client/public/index.html) | HTML | 31 | 4 | 3 | 38 |
 | [client/src/App.vue](/client/src/App.vue) | Vue | 19 | 0 | 4 | 23 |
 | [client/src/components/GSignInButton.vue](/client/src/components/GSignInButton.vue) | Vue | 23 | 0 | 1 | 24 |
-| [client/src/components/Login.vue](/client/src/components/Login.vue) | Vue | 121 | 36 | 7 | 164 |
+| [client/src/components/Login.vue](/client/src/components/Login.vue) | Vue | 126 | 35 | 7 | 168 |
 | [client/src/components/Logout.vue](/client/src/components/Logout.vue) | Vue | 24 | 0 | 2 | 26 |
 | [client/src/components/Modal.vue](/client/src/components/Modal.vue) | Vue | 37 | 0 | 2 | 39 |
 | [client/src/components/Navigation.vue](/client/src/components/Navigation.vue) | Vue | 107 | 0 | 4 | 111 |
-| [client/src/components/Pomodoro.vue](/client/src/components/Pomodoro.vue) | Vue | 160 | 8 | 9 | 177 |
+| [client/src/components/Pomodoro.vue](/client/src/components/Pomodoro.vue) | Vue | 169 | 8 | 10 | 187 |
 | [client/src/components/SignUp.vue](/client/src/components/SignUp.vue) | Vue | 110 | 0 | 5 | 115 |
 | [client/src/components/scss/App.scss](/client/src/components/scss/App.scss) | SCSS | 19 | 3 | 1 | 23 |
 | [client/src/components/scss/Calendar.scss](/client/src/components/scss/Calendar.scss) | SCSS | 67 | 1 | 15 | 83 |
@@ -37,26 +37,26 @@ Total : 147 files,  36644 codes, 578 comments, 549 blanks, all 37771 lines
 | [client/src/router/index.js](/client/src/router/index.js) | JavaScript | 133 | 3 | 6 | 142 |
 | [client/src/services/index.js](/client/src/services/index.js) | JavaScript | 1 | 0 | 0 | 1 |
 | [client/src/services/user.service.js](/client/src/services/user.service.js) | JavaScript | 0 | 21 | 3 | 24 |
-| [client/src/store/index.js](/client/src/store/index.js) | JavaScript | 63 | 0 | 2 | 65 |
+| [client/src/store/index.js](/client/src/store/index.js) | JavaScript | 72 | 0 | 2 | 74 |
 | [client/src/views/About.vue](/client/src/views/About.vue) | Vue | 35 | 2 | 3 | 40 |
 | [client/src/views/Exercises/Exercises.scss](/client/src/views/Exercises/Exercises.scss) | SCSS | 9 | 1 | 3 | 13 |
-| [client/src/views/Exercises/Private.vue](/client/src/views/Exercises/Private.vue) | Vue | 136 | 2 | 3 | 141 |
+| [client/src/views/Exercises/Private.vue](/client/src/views/Exercises/Private.vue) | Vue | 189 | 2 | 4 | 195 |
 | [client/src/views/Exercises/Public.vue](/client/src/views/Exercises/Public.vue) | Vue | 102 | 5 | 3 | 110 |
 | [client/src/views/Exercises/Wget.vue](/client/src/views/Exercises/Wget.vue) | Vue | 95 | 0 | 2 | 97 |
-| [client/src/views/Exercises/Workouts.vue](/client/src/views/Exercises/Workouts.vue) | Vue | 100 | 0 | 5 | 105 |
+| [client/src/views/Exercises/Workouts.vue](/client/src/views/Exercises/Workouts.vue) | Vue | 158 | 1 | 5 | 164 |
 | [client/src/views/Health/Focus.vue](/client/src/views/Health/Focus.vue) | Vue | 16 | 0 | 2 | 18 |
 | [client/src/views/Health/Progress.vue](/client/src/views/Health/Progress.vue) | Vue | 7 | 0 | 0 | 7 |
 | [client/src/views/Health/Sleep.vue](/client/src/views/Health/Sleep.vue) | Vue | 208 | 89 | 14 | 311 |
 | [client/src/views/Health/Status.vue](/client/src/views/Health/Status.vue) | Vue | 7 | 0 | 1 | 8 |
 | [client/src/views/Health/Test.vue](/client/src/views/Health/Test.vue) | Vue | 56 | 8 | 4 | 68 |
 | [client/src/views/Home.vue](/client/src/views/Home.vue) | Vue | 42 | 2 | 4 | 48 |
-| [client/src/views/Planner.vue](/client/src/views/Planner.vue) | Vue | 238 | 3 | 6 | 247 |
-| [client/src/views/Recipes/Private.vue](/client/src/views/Recipes/Private.vue) | Vue | 148 | 1 | 4 | 153 |
+| [client/src/views/Planner.vue](/client/src/views/Planner.vue) | Vue | 330 | 3 | 6 | 339 |
+| [client/src/views/Recipes/Private.vue](/client/src/views/Recipes/Private.vue) | Vue | 201 | 1 | 4 | 206 |
 | [client/src/views/Recipes/Public.vue](/client/src/views/Recipes/Public.vue) | Vue | 76 | 1 | 3 | 80 |
 | [client/src/views/Recipes/Recipes.scss](/client/src/views/Recipes/Recipes.scss) | SCSS | 9 | 1 | 3 | 13 |
 | [client/src/views/Recipes/Spooncular.vue](/client/src/views/Recipes/Spooncular.vue) | Vue | 82 | 0 | 4 | 86 |
 | [client/src/views/User/Profile.vue](/client/src/views/User/Profile.vue) | Vue | 105 | 1 | 3 | 109 |
-| [client/src/views/User/Settings.vue](/client/src/views/User/Settings.vue) | Vue | 0 | 0 | 1 | 1 |
+| [client/src/views/User/Settings.vue](/client/src/views/User/Settings.vue) | Vue | 102 | 0 | 5 | 107 |
 | [client/src/views/scss/About.scss](/client/src/views/scss/About.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/views/scss/Home.scss](/client/src/views/scss/Home.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [client/src/views/scss/Planner.scss](/client/src/views/scss/Planner.scss) | SCSS | 9 | 1 | 3 | 13 |
@@ -78,43 +78,57 @@ Total : 147 files,  36644 codes, 578 comments, 549 blanks, all 37771 lines
 | [mobile/App_Resources/iOS/LaunchScreen.storyboard](/mobile/App_Resources/iOS/LaunchScreen.storyboard) | XML | 52 | 1 | 1 | 54 |
 | [mobile/README.md](/mobile/README.md) | Markdown | 29 | 0 | 16 | 45 |
 | [mobile/app/app.scss](/mobile/app/app.scss) | SCSS | 46 | 3 | 10 | 59 |
-| [mobile/app/app.ts](/mobile/app/app.ts) | TypeScript | 27 | 7 | 11 | 45 |
+| [mobile/app/app.ts](/mobile/app/app.ts) | TypeScript | 31 | 18 | 12 | 61 |
 | [mobile/app/components/App.scss](/mobile/app/components/App.scss) | SCSS | 0 | 7 | 4 | 11 |
 | [mobile/app/components/App.vue](/mobile/app/components/App.vue) | Vue | 163 | 23 | 12 | 198 |
-| [mobile/app/components/Login.vue](/mobile/app/components/Login.vue) | Vue | 301 | 5 | 7 | 313 |
-| [mobile/app/components/drawerContent.vue](/mobile/app/components/drawerContent.vue) | Vue | 78 | 0 | 3 | 81 |
+| [mobile/app/components/Login.vue](/mobile/app/components/Login.vue) | Vue | 297 | 11 | 7 | 315 |
+| [mobile/app/components/Selector.vue](/mobile/app/components/Selector.vue) | Vue | 46 | 0 | 10 | 56 |
+| [mobile/app/components/SelectorModal.vue](/mobile/app/components/SelectorModal.vue) | Vue | 108 | 1 | 19 | 128 |
+| [mobile/app/components/drawerContent.vue](/mobile/app/components/drawerContent.vue) | Vue | 77 | 1 | 3 | 81 |
 | [mobile/app/components/sideDrawer.vue](/mobile/app/components/sideDrawer.vue) | Vue | 16 | 0 | 2 | 18 |
 | [mobile/app/mixins/sideDrawer.ts](/mobile/app/mixins/sideDrawer.ts) | TypeScript | 37 | 0 | 0 | 37 |
-| [mobile/app/routes/index.ts](/mobile/app/routes/index.ts) | TypeScript | 23 | 2 | 3 | 28 |
+| [mobile/app/routes/index.ts](/mobile/app/routes/index.ts) | TypeScript | 25 | 2 | 3 | 30 |
 | [mobile/app/services/api.service.js](/mobile/app/services/api.service.js) | JavaScript | 11 | 0 | 0 | 11 |
 | [mobile/app/store/index.ts](/mobile/app/store/index.ts) | TypeScript | 42 | 18 | 7 | 67 |
 | [mobile/app/store/modules/sideDrawer.ts](/mobile/app/store/modules/sideDrawer.ts) | TypeScript | 16 | 0 | 3 | 19 |
 | [mobile/app/style/app.scss](/mobile/app/style/app.scss) | SCSS | 0 | 0 | 1 | 1 |
 | [mobile/app/views/About.vue](/mobile/app/views/About.vue) | Vue | 26 | 0 | 3 | 29 |
 | [mobile/app/views/Activities/Exercises.vue](/mobile/app/views/Activities/Exercises.vue) | Vue | 101 | 0 | 3 | 104 |
-| [mobile/app/views/Activities/Exercises/Private.vue](/mobile/app/views/Activities/Exercises/Private.vue) | Vue | 6 | 0 | 0 | 6 |
-| [mobile/app/views/Activities/Exercises/Public.vue](/mobile/app/views/Activities/Exercises/Public.vue) | Vue | 6 | 0 | 0 | 6 |
+| [mobile/app/views/Activities/Exercises/Private.vue](/mobile/app/views/Activities/Exercises/Private.vue) | Vue | 110 | 3 | 6 | 119 |
+| [mobile/app/views/Activities/Exercises/PrivateAddEdit.vue](/mobile/app/views/Activities/Exercises/PrivateAddEdit.vue) | Vue | 227 | 44 | 25 | 296 |
+| [mobile/app/views/Activities/Exercises/PrivateDetails.vue](/mobile/app/views/Activities/Exercises/PrivateDetails.vue) | Vue | 74 | 0 | 11 | 85 |
+| [mobile/app/views/Activities/Exercises/Public.vue](/mobile/app/views/Activities/Exercises/Public.vue) | Vue | 100 | 1 | 5 | 106 |
+| [mobile/app/views/Activities/Exercises/PublicDetails.vue](/mobile/app/views/Activities/Exercises/PublicDetails.vue) | Vue | 47 | 0 | 10 | 57 |
 | [mobile/app/views/Activities/Exercises/Wger.vue](/mobile/app/views/Activities/Exercises/Wger.vue) | Vue | 111 | 1 | 6 | 118 |
 | [mobile/app/views/Activities/Exercises/WgerDetails.vue](/mobile/app/views/Activities/Exercises/WgerDetails.vue) | Vue | 47 | 0 | 10 | 57 |
-| [mobile/app/views/Activities/Workouts.vue](/mobile/app/views/Activities/Workouts.vue) | Vue | 26 | 0 | 3 | 29 |
+| [mobile/app/views/Activities/WorkoutAddEdit.vue](/mobile/app/views/Activities/WorkoutAddEdit.vue) | Vue | 187 | 44 | 24 | 255 |
+| [mobile/app/views/Activities/WorkoutDetails.vue](/mobile/app/views/Activities/WorkoutDetails.vue) | Vue | 76 | 0 | 13 | 89 |
+| [mobile/app/views/Activities/Workouts.vue](/mobile/app/views/Activities/Workouts.vue) | Vue | 126 | 3 | 7 | 136 |
 | [mobile/app/views/Activities/Workouts/Private.vue](/mobile/app/views/Activities/Workouts/Private.vue) | Vue | 0 | 0 | 1 | 1 |
 | [mobile/app/views/Activities/Workouts/Public.vue](/mobile/app/views/Activities/Workouts/Public.vue) | Vue | 0 | 0 | 1 | 1 |
-| [mobile/app/views/Activity.vue](/mobile/app/views/Activity.vue) | Vue | 105 | 1 | 6 | 112 |
-| [mobile/app/views/ActivityDetails.vue](/mobile/app/views/ActivityDetails.vue) | Vue | 45 | 0 | 9 | 54 |
-| [mobile/app/views/ActivityDetailsEdit.vue](/mobile/app/views/ActivityDetailsEdit.vue) | Vue | 157 | 42 | 34 | 233 |
+| [mobile/app/views/Activity.vue](/mobile/app/views/Activity.vue) | Vue | 110 | 9 | 6 | 125 |
+| [mobile/app/views/ActivityDetails.vue](/mobile/app/views/ActivityDetails.vue) | Vue | 72 | 0 | 10 | 82 |
+| [mobile/app/views/ActivityDetailsEdit.vue](/mobile/app/views/ActivityDetailsEdit.vue) | Vue | 211 | 44 | 24 | 279 |
+| [mobile/app/views/DayPage.vue](/mobile/app/views/DayPage.vue) | Vue | 29 | 5 | 2 | 36 |
 | [mobile/app/views/Food/Meals.vue](/mobile/app/views/Food/Meals.vue) | Vue | 26 | 0 | 3 | 29 |
-| [mobile/app/views/Food/Recipes.vue](/mobile/app/views/Food/Recipes.vue) | Vue | 49 | 4 | 3 | 56 |
+| [mobile/app/views/Food/Recipes.vue](/mobile/app/views/Food/Recipes.vue) | Vue | 54 | 0 | 3 | 57 |
+| [mobile/app/views/Food/Recipes/Private.vue](/mobile/app/views/Food/Recipes/Private.vue) | Vue | 110 | 3 | 6 | 119 |
+| [mobile/app/views/Food/Recipes/PrivateAddEdit.vue](/mobile/app/views/Food/Recipes/PrivateAddEdit.vue) | Vue | 219 | 44 | 25 | 288 |
+| [mobile/app/views/Food/Recipes/PrivateDetails.vue](/mobile/app/views/Food/Recipes/PrivateDetails.vue) | Vue | 74 | 0 | 11 | 85 |
+| [mobile/app/views/Food/Recipes/Public.vue](/mobile/app/views/Food/Recipes/Public.vue) | Vue | 100 | 1 | 5 | 106 |
+| [mobile/app/views/Food/Recipes/PublicDetails.vue](/mobile/app/views/Food/Recipes/PublicDetails.vue) | Vue | 49 | 0 | 11 | 60 |
+| [mobile/app/views/Food/Recipes/Spooncular.vue](/mobile/app/views/Food/Recipes/Spooncular.vue) | Vue | 101 | 1 | 5 | 107 |
 | [mobile/app/views/Food/Recipes/SpooncularDetails.vue](/mobile/app/views/Food/Recipes/SpooncularDetails.vue) | Vue | 27 | 0 | 4 | 31 |
 | [mobile/app/views/Health/Focus.vue](/mobile/app/views/Health/Focus.vue) | Vue | 87 | 5 | 6 | 98 |
 | [mobile/app/views/Health/Health.vue](/mobile/app/views/Health/Health.vue) | Vue | 48 | 0 | 3 | 51 |
-| [mobile/app/views/Home.vue](/mobile/app/views/Home.vue) | Vue | 59 | 0 | 4 | 63 |
+| [mobile/app/views/Home.vue](/mobile/app/views/Home.vue) | Vue | 115 | 22 | 8 | 145 |
 | [mobile/app/views/User/Profile.vue](/mobile/app/views/User/Profile.vue) | Vue | 25 | 0 | 3 | 28 |
 | [mobile/hooks/after-prepare/nativescript-webpack.js](/mobile/hooks/after-prepare/nativescript-webpack.js) | JavaScript | 1 | 0 | 1 | 2 |
 | [mobile/hooks/before-checkForChanges/nativescript-core.js](/mobile/hooks/before-checkForChanges/nativescript-core.js) | JavaScript | 1 | 0 | 1 | 2 |
 | [mobile/hooks/before-checkForChanges/nativescript-webpack.js](/mobile/hooks/before-checkForChanges/nativescript-webpack.js) | JavaScript | 1 | 0 | 1 | 2 |
 | [mobile/nativescript.config.ts](/mobile/nativescript.config.ts) | TypeScript | 10 | 0 | 2 | 12 |
-| [mobile/package-lock.json](/mobile/package-lock.json) | JSON | 8,412 | 0 | 1 | 8,413 |
-| [mobile/package.json](/mobile/package.json) | JSON | 60 | 0 | 1 | 61 |
+| [mobile/package-lock.json](/mobile/package-lock.json) | JSON | 8,452 | 0 | 1 | 8,453 |
+| [mobile/package.json](/mobile/package.json) | JSON | 62 | 0 | 1 | 63 |
 | [mobile/tools/assets/thumbnail.svg](/mobile/tools/assets/thumbnail.svg) | XML | 1 | 0 | 0 | 1 |
 | [mobile/tools/dot.gitignore](/mobile/tools/dot.gitignore) | Ignore | 25 | 5 | 5 | 35 |
 | [mobile/tools/vscode.extensions.json](/mobile/tools/vscode.extensions.json) | JSON | 5 | 0 | 1 | 6 |
@@ -123,14 +137,16 @@ Total : 147 files,  36644 codes, 578 comments, 549 blanks, all 37771 lines
 | [mobile/types/references.d.ts](/mobile/types/references.d.ts) | TypeScript | 0 | 1 | 1 | 2 |
 | [mobile/types/shims.vue.d.ts](/mobile/types/shims.vue.d.ts) | TypeScript | 4 | 0 | 0 | 4 |
 | [mobile/webpack.config.js](/mobile/webpack.config.js) | JavaScript | 243 | 97 | 18 | 358 |
+| [package-lock.json](/package-lock.json) | JSON | 2,847 | 0 | 1 | 2,848 |
 | [server/.eslintrc.js](/server/.eslintrc.js) | JavaScript | 11 | 0 | 0 | 11 |
 | [server/config.json](/server/config.json) | JSON | 6 | 0 | 0 | 6 |
 | [server/package-lock.json](/server/package-lock.json) | JSON | 3,185 | 0 | 1 | 3,186 |
 | [server/package.json](/server/package.json) | JSON | 41 | 0 | 1 | 42 |
-| [server/src/app.ts](/server/src/app.ts) | TypeScript | 41 | 7 | 8 | 56 |
+| [server/src/app.ts](/server/src/app.ts) | TypeScript | 42 | 6 | 8 | 56 |
 | [server/src/constants/endpoint.ts](/server/src/constants/endpoint.ts) | TypeScript | 1 | 0 | 0 | 1 |
 | [server/src/helpers/auth.ts](/server/src/helpers/auth.ts) | TypeScript | 0 | 0 | 1 | 1 |
-| [server/src/models/activity.ts](/server/src/models/activity.ts) | TypeScript | 36 | 10 | 4 | 50 |
+| [server/src/helpers/mailer.ts](/server/src/helpers/mailer.ts) | TypeScript | 46 | 0 | 4 | 50 |
+| [server/src/models/activities.ts](/server/src/models/activities.ts) | TypeScript | 41 | 10 | 4 | 55 |
 | [server/src/models/exercises.ts](/server/src/models/exercises.ts) | TypeScript | 57 | 0 | 4 | 61 |
 | [server/src/models/mealPlans.ts](/server/src/models/mealPlans.ts) | TypeScript | 43 | 0 | 4 | 47 |
 | [server/src/models/meals.ts](/server/src/models/meals.ts) | TypeScript | 27 | 0 | 4 | 31 |
@@ -140,22 +156,25 @@ Total : 147 files,  36644 codes, 578 comments, 549 blanks, all 37771 lines
 | [server/src/models/workouts.ts](/server/src/models/workouts.ts) | TypeScript | 19 | 0 | 4 | 23 |
 | [server/src/routes.ts](/server/src/routes.ts) | TypeScript | 14 | 0 | 1 | 15 |
 | [server/src/routes/activities.ts](/server/src/routes/activities.ts) | TypeScript | 122 | 6 | 7 | 135 |
-| [server/src/routes/api.ts](/server/src/routes/api.ts) | TypeScript | 84 | 5 | 14 | 103 |
+| [server/src/routes/api.ts](/server/src/routes/api.ts) | TypeScript | 60 | 1 | 9 | 70 |
 | [server/src/routes/exercises.ts](/server/src/routes/exercises.ts) | TypeScript | 122 | 11 | 8 | 141 |
 | [server/src/routes/mailApi.ts](/server/src/routes/mailApi.ts) | TypeScript | 0 | 0 | 1 | 1 |
 | [server/src/routes/recipes.ts](/server/src/routes/recipes.ts) | TypeScript | 49 | 0 | 7 | 56 |
 | [server/src/routes/sleeps.ts](/server/src/routes/sleeps.ts) | TypeScript | 102 | 11 | 6 | 119 |
-| [server/src/routes/users.ts](/server/src/routes/users.ts) | TypeScript | 357 | 4 | 16 | 377 |
+| [server/src/routes/users.ts](/server/src/routes/users.ts) | TypeScript | 713 | 38 | 47 | 798 |
 | [server/src/routes/workouts.ts](/server/src/routes/workouts.ts) | TypeScript | 10 | 0 | 3 | 13 |
 | [server/src/template/mailApi.html](/server/src/template/mailApi.html) | HTML | 155 | 2 | 2 | 159 |
 | [server/tsconfig.json](/server/tsconfig.json) | JSON | 14 | 50 | 8 | 72 |
 | [watch/app/index.js](/watch/app/index.js) | JavaScript | 1 | 0 | 1 | 2 |
-| [watch/companion/index.js](/watch/companion/index.js) | JavaScript | 1 | 0 | 1 | 2 |
-| [watch/package-lock.json](/watch/package-lock.json) | JSON | 4,472 | 0 | 1 | 4,473 |
-| [watch/package.json](/watch/package.json) | JSON | 28 | 0 | 1 | 29 |
+| [watch/common/globals.js](/watch/common/globals.js) | JavaScript | 1 | 0 | 0 | 1 |
+| [watch/companion/index.js](/watch/companion/index.js) | JavaScript | 21 | 47 | 7 | 75 |
+| [watch/package-lock.json](/watch/package-lock.json) | JSON | 4,321 | 0 | 1 | 4,322 |
+| [watch/package.json](/watch/package.json) | JSON | 36 | 0 | 1 | 37 |
+| [watch/resources/index.gui](/watch/resources/index.gui) | svg | 3 | 0 | 1 | 4 |
 | [watch/resources/index.view](/watch/resources/index.view) | svg | 3 | 0 | 1 | 4 |
 | [watch/resources/styles.css](/watch/resources/styles.css) | CSS | 11 | 0 | 2 | 13 |
 | [watch/resources/widget.defs](/watch/resources/widget.defs) | svg | 6 | 0 | 1 | 7 |
+| [watch/resources/widgets.gui](/watch/resources/widgets.gui) | svg | 5 | 1 | 1 | 7 |
 | [watch/settings/index.jsx](/watch/settings/index.jsx) | JavaScript React | 13 | 0 | 1 | 14 |
 | [watch/tsconfig.json](/watch/tsconfig.json) | JSON | 3 | 0 | 1 | 4 |
 

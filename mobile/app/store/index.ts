@@ -1,3 +1,8 @@
+/**
+* Author: Tautvydas Dikšas
+* Date: 2021-04-26
+* Path: app/store/index
+*/
 import Vue from 'nativescript-vue';
 import Vuex from 'vuex';
 import { ApplicationSettings } from '@nativescript/core'

@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/routes/exercises
+ * 
+ */
 import express, { NextFunction, Request, Response, Router} from 'express'
 import { exerciseModel, IExercise } from '../models/exercises'
 

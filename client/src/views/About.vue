@@ -1,4 +1,11 @@
 <template>
+  <!-- 
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/views/About
+    */
+  -->
   <div class="about">
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <h1>Who is this for?</h1>

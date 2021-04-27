@@ -1,4 +1,11 @@
 <template>
+  <!--
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: app/views/Food/Activities/Exercises/PublicDetails
+    */
+  -->
     <Page>
         <ActionBar>
             <NavigationButton @tap="$navigateBack()" android.systemIcon="ic_menu_back"/>

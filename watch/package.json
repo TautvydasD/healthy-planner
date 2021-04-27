@@ -4,19 +4,27 @@
   "private": true,
   "license": "UNLICENSED",
   "devDependencies": {
-    "@fitbit/sdk": "~5.0.2",
+    "@fitbit/sdk": "^4.2.2",
     "@fitbit/sdk-cli": "^1.7.3"
   },
   "fitbit": {
-    "appUUID": "ab18e332-5a6a-4f5b-8758-593f89332b37",
+    "appUUID": "cd3e4376-3424-4531-90b3-f14869986f3f",
     "appType": "app",
-    "appDisplayName": "Watch",
+    "appDisplayName": "popoPlan",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "access_activity",
+      "access_exercise",
+      "access_location",
+      "access_sleep",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_internet",
+      "run_background"
+    ],
     "buildTargets": [
-      "atlas",
-      "vulcan"
+      "mira"
     ],
     "i18n": {},
     "defaultLanguage": "en-US"

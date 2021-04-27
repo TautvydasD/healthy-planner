@@ -1,11 +1,19 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/models/activities
+ * 
+ */
 import { Schema, Model, model, Document } from 'mongoose'
 
 interface IActivity extends Document {
   name: string,
   category: string,
   description: string
-  from: string,
-  to: string,
+  fromDate: Date,
+  fromTime: Date,
+  toDate: Date,
+  toTime: Date,
   createdAt: Date
 }
 
@@ -21,13 +29,18 @@ const activitySchema: Schema = new Schema({
   description: {
     type: String
   },
-  from: {
-    type: String,
-    required: [true, 'Activity start time is required']
+  fromDate: {
+    type: Date,
+    required: [true, 'Date is required']
   },
-  to: {
-    type: String,
-    required: [true, 'Activity end time is required']
+  fromTime: {
+    type: Date
+  },
+  toDate: {
+    type: Date,
+  },
+  toTime: {
+    type: Date
   },
   createdAt: {
     type: Date,

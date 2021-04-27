@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: server/.eslintrc
+ * 
+ */
 module.exports = {
     parser : '@typescript-eslint/parser',
     'rules': {

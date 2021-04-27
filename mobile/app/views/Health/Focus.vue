@@ -1,4 +1,11 @@
 <template>
+  <!--
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: app/views/Health/Focus
+    */
+  -->
   <StackLayout>
     <Label text="Pomodoro timer"/>
     <Label :text="pad2(minutesLeft) + ':' + pad2(secondsLeft)"/>

@@ -1,4 +1,11 @@
 <template>
+  <!--
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: app/views/Food/Recipes/Private
+    */
+  -->
   <GridLayout
     rows="auto, *"
     columns="auto, *"

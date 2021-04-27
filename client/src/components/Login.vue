@@ -1,4 +1,11 @@
 <template>
+  <!--
+    /**
+    * Author: Tautvydas Dikšas
+    * Date: 2021-04-26
+    * Path: src/components/Login
+    */
+  -->
   <div>
     <button
       class="user-button"
@@ -11,20 +18,24 @@
     >
       <h1>login</h1>
       <div>
-        <label for="username">Username: </label>
-        <input
-          v-model="loginForm.username"
-          name="username"
-          type="text"
-        >
+        <div>
+          <label for="username">Username: </label>
+          <input
+            v-model="loginForm.username"
+            name="username"
+            type="text"
+          >
+        </div>
       </div>
       <div>
-        <label for="password">Password: </label>
-        <input
-          v-model="loginForm.password"
-          name="password"
-          :type="isPasswordCovered ? 'password' : 'text'"
-        >
+        <div>
+          <label for="password">Password: </label>
+          <input
+            v-model="loginForm.password"
+            name="password"
+            :type="isPasswordCovered ? 'password' : 'text'"
+          >
+        </div>
         <button @click="() => isPasswordCovered = !isPasswordCovered">See</button>
       </div>
       <div
@@ -115,17 +126,21 @@ export default {
   methods: {
     login () {
       this.errText = ''
-      // localStorage.setItem('user', 'kek')
       this.$http.post('http://192.168.1.11:5000/api/login', {
         username: this.loginForm.username,
         password: this.loginForm.password
       }).then((res) => {
-        this.$store.dispatch('setUser', 'kek', this.loginForm.username).then(() => {
+        console.log(res)
+        console.log(res.data.userId)
+        console.log(this.loginForm.username)
+        this.$store.dispatch('setUser', {
+          token: 'kek',
+          userId: res.data.userId,
+          username: this.loginForm.username
+        }).then(() => {
           this.isFormEnabled = !this.isFormEnabled
-          console.log(res)
         })
       }).catch((err) => {
-        console.log(err)
         this.failed = true
         if (err.response.status === 401) {
           this.errText = err.response.data.error

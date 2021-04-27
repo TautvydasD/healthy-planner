@@ -1,3 +1,9 @@
+/**
+ * Author: Tautvydas Dikšas
+ * Date: 2021-04-26
+ * Path: src/app
+ * 
+ */
 import express, { Application, Request, Response, NextFunction } from 'express'
 import mongoose from 'mongoose'
 import config from '../config.json'

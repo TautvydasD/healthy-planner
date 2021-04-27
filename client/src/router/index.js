@@ -1,3 +1,8 @@
+/**
+* Author: Tautvydas Dikšas
+* Date: 2021-04-26
+* Path: src/router/index
+*/
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import store from '../store'
