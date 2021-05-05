@@ -351,7 +351,7 @@ router.route('/:id')
     const userObj = await userModel.findById(req.params.id).populate('recipes').exec()
     if (!userObj) {
       res.statusCode = 404
-      res.send({ message: 'Recipe not found' })
+      res.send({ message: 'User not found' })
       return
     }
 
@@ -390,7 +390,7 @@ router.route('/:id')
     const user = await userModel.findById(req.params.id).populate('recipes').exec()
     if (!user) {
       res.statusCode = 404
-      res.send({ message: 'Recipe not found' })
+      res.send({ message: 'User not found' })
       return
     }
     const ids: number = user?.recipes.map(el => el['_id']).indexOf(req.params.recipe) ?? 0
@@ -503,7 +503,7 @@ router.route('/:id')
     const userObj = await userModel.findById(req.params.id).populate('workouts').exec()
     if (!userObj) {
       res.statusCode = 404
-      res.send({ message: 'Workout not found' })
+      res.send({ message: 'User not found' })
       return
     }
 
@@ -696,7 +696,7 @@ router.route('/:id/activities/:activity')
     if (!userObj) {
       return res
         .status(404)
-        .send({ message: 'Activity not found' })
+        .send({ message: 'User not found' })
     }
 
     let exists = false
@@ -739,7 +739,7 @@ router.route('/:id/activities/:activity')
     if (!user) {
       return res
         .status(404)
-        .send({ message: 'Activity not found' })
+        .send({ message: 'User not found' })
     }
 
     const ids: number = user?.activities.map(el => el['_id']).indexOf(req.params.activity) ?? 0

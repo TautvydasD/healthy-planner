@@ -10,6 +10,7 @@ interface IWorkout extends Document {
     type: string;
     exercises: string;
     reps: string;
+    createdAt: Date;
 }
 
 const workoutSchema: Schema = new Schema({
@@ -21,6 +22,10 @@ const workoutSchema: Schema = new Schema({
     },
     reps: {
         type: String
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now()
     }
 })
 

@@ -11,10 +11,12 @@ import { sendMail, readHTMLFile} from '../helpers/mailer'
 
 const router : Router = express.Router()
 
-router.post('/login', async (req : Request, res : Response) => {
+router.post('/login', login)
+
+async function login (req : Request, res : Response) {
   console.log(req.body)
   const { username, password, email } = req.body
-
+  
   const loggedUser = await userModel.findOne({ username: username, password: password })
   const loggedUserEmail = await userModel.findOne({ email: email, password: password})
   
@@ -30,7 +32,7 @@ router.post('/login', async (req : Request, res : Response) => {
       .status(401)
       .send({ error: 'Incorrect Credentials' })
   }
-})
+}
 
 router.post('/signup', async (req : Request, res : Response) => {
   console.log(req.body)
@@ -73,4 +75,4 @@ router.post('/signup', async (req : Request, res : Response) => {
   )
 })
 
-export { router as api }
+export { router as api, login }
